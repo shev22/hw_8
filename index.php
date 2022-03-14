@@ -1,5 +1,5 @@
 <?php
-require_once "./includes/file.inc.php";
+require_once "includes/file.inc.php";
 session_start();
 
 if(isset($_POST['add'])){

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../includes/file.inc.php";
+require_once "includes/file.inc.php";
 
 if (isset($_POST['remove'])) {
 
@@ -100,18 +100,18 @@ if (isset($_POST['remove'])) {
                             <h6>Amount Payable</h6>
                         </div>
                         <div class="col-md-6">
-                            <h6><?php 
-                             if (isset($_SESSION['cart'])) {
-                                    echo '$'. $total;
-                             }
-                            ?></h6>
+                            <h6><?php
+                                if (isset($_SESSION['cart'])) {
+                                    echo '$' . $total;
+                                }
+                                ?></h6>
                             <h6 class="text-success"><?php if (isset($_SESSION['cart'])) {
-                                    echo 'FREE.<br><hr>';
-                             } ?></h6>
-                            
+                                                            echo 'FREE.<br><hr>';
+                                                        } ?></h6>
+
                             <h6><?php if (isset($_SESSION['cart'])) {
-                                    echo '$'. $total;
-                             } ?></h6>
+                                    echo '$' . $total;
+                                } ?></h6>
                         </div>
                     </div>
                 </div>
